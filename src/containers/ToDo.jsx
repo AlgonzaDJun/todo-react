@@ -11,17 +11,10 @@ const ToDo = () => {
     setTodos([...todos, todo]);
   }
 
-  const enterButton = (ev) => {
-      if (ev.key === 'Enter') {
-        handleClick(ev.target.value);
-      }
-    }
-  
-
   return (
     <div className='todo'>
       <h2 className='title'>To-Do List</h2>
-      <ToDoForm handleClick={handleClick} enterButton={enterButton}/>
+      <ToDoForm handleClick={handleClick}/>
       <ToDoList todos={todos} />
     </div>
   );
