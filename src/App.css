@@ -25,7 +25,7 @@
 }
 
 .todo-list {
-  width: fit-content;
+  width: 0;
 }
 
 .todo-form span {
