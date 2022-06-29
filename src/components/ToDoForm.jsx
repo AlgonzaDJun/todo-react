@@ -19,7 +19,7 @@ const ToDoForm = ({handleClick, enterButton}) => {
 
           //setiap kali input nya berubah, tolong ubah state yang todo di atas. (event.target.value berarti di dalam field input)
           onChange={(event) => setTodo(event.target.value)}/>
-        <button onClick={() => submitHandler(todo)}>Submit</button>
+        <button onClick={() => submitHandler()}>Submit</button>
       </span>
     </div>
   );
