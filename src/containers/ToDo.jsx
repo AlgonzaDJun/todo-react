@@ -13,7 +13,7 @@ const ToDo = () => {
 
   const enterButton = (ev) => {
       if (ev.key === 'Enter') {
-        handleClick()
+        handleClick(ev.target.value);
       }
     }
   
